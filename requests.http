@@ -1,31 +1,15 @@
-### Post 'Hello!"
-POST http://localhost:8080/
+### GET Customer
+GET http://localhost:8080/employee
+
+
+### Post Customer Data
+POST http://localhost:8080/employee
 Content-Type: application/json
 
 {
-  "id": 1,
-  "firstName": "Jaya",
-  "lastName": "Wijaya",
-  "email": "dewa_mabuk@gmail.com"
+  "username":"john.doe",
+  "firstName":"John",
+  "lastName":"Doe",
+  "emailId":"john.doe@gmail.com",
+  "dayOfBirth":"1997-12-03"
 }
-
-### Post "Bonjour!"
-
-POST http://localhost:8080/
-Content-Type: application/json
-
-{
-  "text": "Bonjour!"
-}
-
-### Post "Privet!"
-
-POST http://localhost:8080/
-Content-Type: application/json
-
-{
-  "text": "Privet!"
-}
-
-### Get all the messages
-GET http://localhost:8080/
